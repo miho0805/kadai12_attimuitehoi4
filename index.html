@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/sample.css">
+    <title>あっちむいてホイ</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌳あっちむいてホイ！🌳</h1>
+    </header>
+
+    <main>
+        <ul>
+            <li id="ue_btn">👆</li>
+            <li id="sita_btn">👇</li>
+            <li id="migi_btn">👉</li>
+            <li id="hidari_btn">👈</li>
+        </ul>
+
+        <p id="echo"></p>
+    </main>
+
+    <script>
+
+        // 上の設定
+        console.log("ue_btn")
+        $("#ue_btn").on("click", function () {
+
+            const r = Math.ceil(Math.random() * 4);
+
+            let view = "";
+
+            if (r == 1) {
+                view = '<img src="mv_18.jpg" width="60%">';
+            }
+            if (r == 2) {
+                view = '<img src="mv_11.jpg" width="60%">';
+            }
+            if (r == 3) {
+                view = '<img src="mv_14.jpg" width="60%">';
+            }
+            if (r == 4) {
+                view = '<img src="mv_13.jpg" width="60%">';
+            }
+
+
+            $("#echo").html(view);
+
+        });
+
+        // 下の設定
+        console.log("sita_btn")
+        $("#sita_btn").on("click", function () {
+
+            const r = Math.ceil(Math.random() * 4);
+
+            let view = "";
+
+            if (r == 1) {
+                view = '<img src="mv_16.jpg" width="60%">';
+            }
+            if (r == 2) {
+                view = '<img src="mv_12.jpg" width="60%">';
+            }
+            if (r == 3) {
+                view = '<img src="mv_13.jpg" width="60%">';
+            }
+            if (r == 4) {
+                view = '<img src="mv_14.jpg" width="60%">';
+            }
+
+            $("#echo").html(view);
+
+        });
+
+
+        // 右の設定
+        console.log("migi_btn")
+        $("#migi_btn").on("click", function () {
+
+            const r = Math.ceil(Math.random() * 4);
+
+            let view = "";
+
+            if (r == 1) {
+                view = '<img src="mv_17.jpg" width="60%">';
+            }
+            if (r == 2) {
+                view = '<img src="mv_11.jpg" width="60%">';
+            }
+            if (r == 3) {
+                view = '<img src="mv_12.jpg" width="60%">';
+            }
+            if (r == 4) {
+                view = '<img src="mv_14.jpg" width="60%">';
+            }
+
+            $("#echo").html(view);
+
+        });
+
+        // 左の設定
+        console.log("hidari_btn")
+        $("#hidari_btn").on("click", function () {
+
+            const r = Math.ceil(Math.random() * 4);
+
+            let view = "";
+
+            if (r == 1) {
+                view = '<img src="mv_15.jpg" width="60%">';
+            }
+            if (r == 2) {
+                view = '<img src="mv_11.jpg" width="60%">';
+            }
+            if (r == 3) {
+                view = '<img src="mv_12.jpg" width="60%">';
+            }
+            if (r == 4) {
+                view = '<img src="mv_13.jpg" width="60%">';
+            }
+
+            $("#echo").html(view);
+
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
